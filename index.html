@@ -1,26 +1,81 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Pengingat Tugas</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Form</title>
+    <link rel="stylesheet" href="SignUp_LogIn_Form.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-  <h1>Selamat Datang di Pengingat Tugas</h1>
+  <body>
 
-  <!-- Form login -->
-  <form action="dashboard.html" method="post">
-    <label for="username">Nama Pengguna:</label><br>
-    <input type="text" id="username" name="username" placeholder="Masukkan nama kamu" required><br><br>
+    <div class="container">
+          <div class="form-box login">
+              <form action="#">
+                  <h1>Login</h1>
+                  <div class="input-box">
+                      <input type="text" placeholder="Username" required>
+                      <i class='bx bxs-user'></i>
+                  </div>
+                  <div class="input-box">
+                      <input type="password" placeholder="Password" required>
+                      <i class='bx bxs-lock-alt' ></i>
+                  </div>
+                  <div class="forgot-link">
+                      <a href="#">Forgot Password?</a>
+                  </div>
+                  <button type="submit" class="btn">Login</button>
+                  <p>or login with social platforms</p>
+                  <div class="social-icons">
+                      <a href="#"><i class='bx bxl-google' ></i></a>
+                      <a href="#"><i class='bx bxl-facebook' ></i></a>
+                      <a href="#"><i class='bx bxl-github' ></i></a>
+                      <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                  </div>
+              </form>
+          </div>
 
-    <label for="password">Kata Sandi:</label><br>
-    <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required><br><br>
+          <div class="form-box register">
+              <form action="#">
+                  <h1>Registration</h1>
+                  <div class="input-box">
+                      <input type="text" placeholder="Username" required>
+                      <i class='bx bxs-user'></i>
+                  </div>
+                  <div class="input-box">
+                      <input type="email" placeholder="Email" required>
+                      <i class='bx bxs-envelope' ></i>
+                  </div>
+                  <div class="input-box">
+                      <input type="password" placeholder="Password" required>
+                      <i class='bx bxs-lock-alt' ></i>
+                  </div>
+                  <button type="submit" class="btn">Register</button>
+                  <p>or register with social platforms</p>
+                  <div class="social-icons">
+                      <a href="#"><i class='bx bxl-google' ></i></a>
+                      <a href="#"><i class='bx bxl-facebook' ></i></a>
+                      <a href="#"><i class='bx bxl-github' ></i></a>
+                      <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                  </div>
+              </form>
+          </div>
 
-    <button type="submit">Masuk</button>
-  </form>
+          <div class="toggle-box">
+              <div class="toggle-panel toggle-left">
+                  <h1>Hello, Welcome!</h1>
+                  <p>Don't have an account?</p>
+                  <button class="btn register-btn">Register</button>
+              </div>
 
-  <p>Belum punya akun? <a href="#">Daftar di sini</a></p>
-  <script src="script.js"></script>
-</body>
+              <div class="toggle-panel toggle-right">
+                  <h1>Welcome Back!</h1>
+                  <p>Already have an account?</p>
+                  <button class="btn login-btn">Login</button>
+              </div>
+          </div>
+      </div>
+
+      <script src="SignUp_LogIn_Form.js"></script>
+  </body>
 </html>
